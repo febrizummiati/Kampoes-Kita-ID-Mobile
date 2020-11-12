@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kampoes Kita ID</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="detail">Detail</string>
+    <string name="nama">Febri Zummiati</string>
+    <string name="email">febrizummiati99@gmail.com</string>
+    <string name="about">About</string>
+    <string name="deskripsi">Deskripsi Produk</string>
+    <string name="rating">Rating</string>
+    <string name="evan_mahdy">Evan Mahdy</string>
+    <string name="febri_zummiati">Febri Zummiati</string>
+    <string name="edi_purnomo">Edi Purnomo</string>
+    <string name="seller">Dijual oleh</string>
+    <string name="call">Hubungi Penjual</string>
+    <string name="product_image">Product Image</string>
+    <string name="star1">star1</string>
+    <string name="star2">star2</string>
+    <string name="star3">star3</string>
+    <string name="star4">star4</string>
+    <string name="star5">star5</string>
+    <string name="image_list">Image List</string>
+    <string name="code">Kode</string>
+    <string name="bahan">Bahan</string>
+    <string name="size">Ukuran</string>
+    <string name="color">Warna</string>
+    <string name="price">Harga</string>
+</resources>

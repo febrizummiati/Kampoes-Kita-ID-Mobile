@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pnp"
+                android:id="@+id/product_image"
+                android:contentDescription="@string/product_image" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.Black"
+            android:textSize="25sp"
+            android:id="@+id/product_name"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            tools:text="Nama Produk"/>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/deskripsi"
+            android:layout_marginBottom="16dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/code"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="BKO1"
+                    android:id="@+id/product_code"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/bahan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:id="@+id/product_bahan"
+                    android:text="Cotton Combad 30s"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/size"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="M-XXL"
+                    android:id="@+id/product_size"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Navy"
+                    android:id="@+id/product_color"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/price"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:text="Rp 70.000"
+                    android:id="@+id/product_price"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+        </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:text="@string/rating"
+            android:id="@+id/rating"
+            android:layout_marginBottom="8dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_below="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/ratingDetail"
+            android:layout_below="@id/rating"
+            android:layout_toRightOf="@+id/ratingbar"
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/TextContent.Subtitle"
+            android:text="@string/seller"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/evan"
+                android:id="@+id/img_evan"
+                android:layout_marginEnd="60dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_toEndOf="@id/img_evan"
+                android:src="@drawable/febri"
+                android:id="@+id/img_febri"
+                android:layout_marginEnd="60dp"
+                android:layout_centerHorizontal="true"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_toEndOf="@id/img_febri"
+                android:src="@drawable/edi"
+                android:id="@+id/img_edi"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_evan"
+                android:id="@+id/evan"
+                style="@style/TextContent"
+                android:text="@string/evan_mahdy"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                style="@style/TextContent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/febri"
+                android:layout_toEndOf="@id/evan"
+                android:layout_below="@id/img_febri"
+                android:text="@string/febri_zummiati"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/TextContent"
+                android:layout_below="@id/img_edi"
+                android:layout_toEndOf="@id/febri"
+                android:text="@string/edi_purnomo"
+                android:id="@+id/edi"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_call"
+            style="@style/ButtonGeneral"
+            android:text="@string/call" />
+    </LinearLayout>
+</ScrollView>
